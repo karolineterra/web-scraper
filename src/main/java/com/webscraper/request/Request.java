@@ -1,4 +1,4 @@
-package com.webscrapper.request;
+package com.webscraper.request;
 
 import java.io.IOException;
 import org.jsoup.Jsoup;

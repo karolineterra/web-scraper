@@ -1,9 +1,9 @@
-package com.webscrapper;
+package com.webscraper;
 
 import org.jsoup.nodes.Document;
 
-import com.webscrapper.request.Request;
-import com.webscrapper.scrapping.Scrapping;
+import com.webscraper.request.Request;
+import com.webscraper.scraping.Scraping;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -19,15 +19,12 @@ public class App {
             Request request = new Request(pageURL);
             Document document;
             document = request.fetchDocument();
-            Scrapping scrapping = new Scrapping(document);
-            scrapping.runScrapping();
+            Scraping scraping = new Scraping(document);
+            scraping.runScraping();
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Erro ao realizar a requisição.");
         }
-
-       
-
         scanner.close();
     }
 }
