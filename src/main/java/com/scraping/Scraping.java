@@ -60,7 +60,7 @@ public class Scraping {
         Elements description = pagePath.select("#features p");
         String textDescription = description.text();
         if (textDescription.isEmpty()) {
-            System.out.println("O preço do produto não foi encontrado");
+            System.out.println("A descrição do produto não foi encontrada");
         } else {
             System.out.println("---- DESCRIÇÃO DO PRODUTO ----");
             System.out.println(textDescription);
