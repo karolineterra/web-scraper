@@ -1,14 +1,14 @@
-package com.webscraper;
+package com;
 
 import org.jsoup.nodes.Document;
 
-import com.webscraper.request.Request;
-import com.webscraper.scraping.Scraping;
+import com.request.Request;
+import com.scraping.Scraping;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

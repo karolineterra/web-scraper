@@ -1,4 +1,4 @@
-package com.webscraper.scraping;
+package com.scraping;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
